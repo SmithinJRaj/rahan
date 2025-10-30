@@ -60,8 +60,15 @@ const Hero = () => {
             I wish to serve our branch by representing all of us at the Student Governance Body.
           </p>
           <div className="flex gap-4 mt-6 justify-center">
-            <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300">
-              Vote Now
+            <button
+              style={{ animation: "float-button 3s ease-in-out infinite" }}
+              className="
+                relative overflow-hidden px-8 py-3 rounded-lg font-semibold text-white
+                bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+                transition-all duration-500 ease-out hover:scale-110
+              "
+            >
+              <span className="relative z-10">Vote Now</span>
             </button>
           </div>
         </div>
