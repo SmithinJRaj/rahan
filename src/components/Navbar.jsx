@@ -7,9 +7,6 @@ const Navbar = () => {
         <span className="text-yellow-400">Rahan</span> M
       </h1>
       <div className="space-x-8 hidden md:flex">
-        <a href="#vision" className="hover:text-yellow-400 transition">Vision</a>
-        <a href="#experience" className="hover:text-yellow-400 transition">Experience</a>
-        <a href="#endorsements" className="hover:text-yellow-400 transition">Endorsements</a>
         <a href="#vote" className="bg-yellow-400 text-black px-4 py-2 rounded-full hover:bg-yellow-300 transition">Vote</a>
       </div>
     </nav>

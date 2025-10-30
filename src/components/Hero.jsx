@@ -1,51 +1,67 @@
 import React from "react";
-import profilePic from "../assets/rahan.jpg"; // replace with actual image
+import { FaYoutube, FaInstagram } from "react-icons/fa";
+import profilePic from "../assets/rahan.jpg";
 
 const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col lg:flex-row items-center justify-between w-full min-h-screen pt-20 gap-10"
+      className="flex flex-col lg:flex-row items-center justify-center w-full min-h-screen pt-20 gap-10 px-6 lg:px-20"
     >
+      {/* Left side */}
       <div className="flex-1 space-y-6 text-center lg:text-left">
         <h1 className="text-5xl font-bold leading-tight">
           Vote <span className="text-yellow-400">Rahan M</span> <br /> for{" "}
           <span className="text-indigo-400">CSE Branch Representative</span>
         </h1>
-        <p className="text-gray-300 max-w-xl mx-auto lg:mx-0">
+        <p className="text-gray-300 max-w-xl mx-auto lg:mx-0 text-lg">
           Driven. Dedicated. Determined. A student-first leader with a plan to
-          make our CSE experience stronger, fairer and more fun.
+          make our CSE experience stronger, fairer, and more fun.
         </p>
+
+        {/* Social Buttons */}
         <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
-          <button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
-            Support Rahan
-          </button>
-          <button className="border border-white/30 px-6 py-3 rounded-full hover:bg-white/10 transition">
-            Know more
-          </button>
+          {/* YouTube */}
+          <a
+            href="https://www.youtube.com/watch?v=9N4EjFwH2Go"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-500 hover:scale-105 transition-all duration-300 shadow-lg shadow-red-500/40"
+          >
+            <FaYoutube size={22} />
+            YouTube
+          </a>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/rahanm_21/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-500/40"
+          >
+            <FaInstagram size={22} />
+            Instagram
+          </a>
         </div>
       </div>
 
+      {/* Right side */}
       <div className="flex-1 flex justify-center lg:justify-end">
-        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-sm shadow-lg">
+        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-sm shadow-lg text-center">
           <img
             src={profilePic}
             alt="Rahan M"
-            className="w-300 h-300 rounded-md object-cover mx-auto mb-4"
+            className="w-300 h-300sm:w-300 sm:h-300 rounded-2xl object-cover mx-auto mb-4 border-4 border-white/20 shadow-lg"
           />
-          <h2 className="text-xl font-semibold">Rahan M</h2>
-          <p className="text-sm text-gray-300">2rd Year, CSE</p>
-          <p className="text-gray-400 mt-3 text-sm leading-relaxed">
-            Campus-first problem-solver. Focused on stronger student-faculty
-            communication, better hands-on workshops, and a fairer academic
-            environment.
+          <h2 className="text-2xl font-semibold">Rahan M</h2>
+          <p className="text-sm text-gray-300 mt-1">2nd Year, CSE</p>
+          <p className="text-gray-400 mt-4 text-sm leading-relaxed">
+            I’m Rahan M, and I’m standing as a candidate for Branch Representative of CSED.
+            I wish to serve our branch by representing all of us at the Student Governance Body.
           </p>
-          <div className="flex gap-4 mt-5 justify-center">
-            <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg transition">
-              I Support
-            </button>
-            <button className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition">
-              More
+          <div className="flex gap-4 mt-6 justify-center">
+            <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300">
+              Vote Now
             </button>
           </div>
         </div>

@@ -3,22 +3,22 @@ import React from "react";
 const Vision = () => {
   const goals = [
     {
-      title: "Clear Communication",
-      desc: "Regular office hours, monthly feedback reports.",
+      title: "Collective Decisions",
+      desc: "Every choice will be made together, not alone.",
     },
     {
-      title: "Student Events",
-      desc: "Workshops, hackathons and peer mentoring.",
+      title: "Full Transparency",
+      desc: "All actions and communications will be open and clear.",
     },
     {
-      title: "Fairness",
-      desc: "Transparent grievance redressal and clear academic timelines.",
+      title: "A Vibrant Branch",
+      desc: "I’ll work tirelessly to keep our branch active, engaged, and united.",
     },
   ];
 
   return (
     <section id="vision">
-      <h2 className="text-2xl font-bold mb-8 text-indigo-400">Vision & Goals</h2>
+      <h2 className="text-2xl font-bold mb-8 text-indigo-400">My Commitments to Our Branch</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {goals.map((g, idx) => (
           <div
