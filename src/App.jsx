@@ -18,7 +18,7 @@ const App = () => {
 
       {/* Main Content */}
       <main className="flex-grow w-full flex flex-col items-center justify-start">
-        <div className="w-full max-w-7xl px-6 lg:px-12 py-16 space-y-32">
+        <div className="w-full max-w-7xl px-6 lg:px-12 py-10 space-y-32">
           <section id="hero" className="w-full -mt-10">
             <Hero />
           </section>
