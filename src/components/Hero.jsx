@@ -60,16 +60,21 @@ const Hero = () => {
             I wish to serve our branch by representing all of us at the Student Governance Body.
           </p>
           <div className="flex gap-4 mt-6 justify-center">
-            <button
-              style={{ animation: "float-button 3s ease-in-out infinite" }}
+            <a
+              href="https://forms.gle/LGnZJAR7oUjby2HX8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 relative overflow-hidden px-8 py-3 rounded-lg font-semibold text-white
                 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
-                transition-all duration-500 ease-out hover:scale-110
+                transition-all duration-500 ease-out
+                hover:scale-110 hover:shadow-[0_0_30px_rgba(147,63,211,1)]
+                animate-float
               "
             >
               <span className="relative z-10">Vote Now</span>
-            </button>
+              <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-white/20 opacity-0 group-hover:opacity-100 animate-sweep"></span>
+            </a>
           </div>
         </div>
       </div>
